@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input, textarea {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+      max-width: 400px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Your Appointment</h1>
+  <p>Fill out the form below and we’ll get back to you shortly.</p>
+  <form>
+    <input type="text" placeholder="Your Name" required /><br />
+    <input type="email" placeholder="Your Email" required /><br />
+    <input type="tel" placeholder="Phone Number" required /><br />
+    <textarea rows="4" placeholder="Preferred date/time or any notes..."></textarea><br />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
