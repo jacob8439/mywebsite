@@ -3,18 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Pristine Auto Detailing</title>
+  <title>Contact — Yakubovs Auto Detailing</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="theme-light">
   <!-- header -->
+
   <main class="container" data-aos="fade-up">
     <h1>Contact</h1>
     <p>Request an estimate or schedule a service. We'll follow up within one business day.</p>
 
-    <form class="contact-form" action="https://example.com/api/contact" method="post" aria-label="Contact form" data-aos="fade-up">
+    <form class="contact-form"
+          action="https://formspree.io/f/xldqlrpy"
+          method="POST"
+          aria-label="Contact form"
+          data-aos="fade-up">
+
+      <!-- optional: customize email subject -->
+      <input type="hidden" name="_subject" value="New Pristine Auto Detailing inquiry">
+
+      <!-- optional: redirect to a thank-you page after submit -->
+      <!-- change this URL to your real thank-you page if you make one -->
+      <!-- <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html"> -->
+
       <label for="name">Name</label>
       <input id="name" name="name" type="text" required>
 
@@ -38,10 +51,13 @@
       <button class="btn btn-primary" type="submit">Send request</button>
     </form>
   </main>
+
   <footer><!-- same footer --></footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>AOS.init({ once: true, duration: 700, offset: 120 });</script>
+  <script>
+    AOS.init({ once: true, duration: 700, offset: 120 });
+  </script>
 </body>
 </html>
